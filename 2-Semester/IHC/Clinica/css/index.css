@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+}
+
+
+
+body {
+    background-image: url('/University/2-Semester/IHC/Clinica/imgs/background/bg-home.png');
+}
+
+
+
+
+/* Header */
+/* Nav Bar */
+#bar {
+    background-color: #6E98F6;
+    height: 120px;
+}
+
+#Logo {
+    margin-top:10px;
+    margin-left: 300px;
+}
+
+#options {
+    display: flex;
+}
