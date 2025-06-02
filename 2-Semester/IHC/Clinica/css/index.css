@@ -1,27 +1,186 @@
 * {
-    margin: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-
-
-body {
-    background-image: url('/University/2-Semester/IHC/Clinica/imgs/background/bg-home.png');
-}
-
-
-
-
-/* Header */
+/*-----------------Header-----------------*/
 #bar {
-    background-color: #6E98F6;
-    height: 120px;
+  background-color: #89a9f6;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+
+.left-sections {
+  margin-left: 160px;
+  display: flex;
+  align-items: center;
 }
 
 #Logo {
-    margin-top:10px;
-    margin-left: 300px;
+  height: 60px;
+  margin-right: 40px;
 }
 
-#options {
-    display: flex;
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a,
+.auth a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.auth {
+  margin-right: 160px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+#reg-button {
+  background-color: #27447e;
+  padding: 12px 28px;
+  border-radius: 25px;
+}
+
+/*-----------------Main-----------------*/
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0.3)),
+    url("/University/2-Semester/IHC/Clinica/imgs/background/bg-home.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  padding-top: 160px;
+  padding-bottom: 100px;
+  flex-grow: 1;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0px 40px; 
+  gap: 50px;
+}
+
+.hero-left {
+  flex-basis: 45%;
+  max-width: 500px;
+}
+
+.hero-left h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.hero-left p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #eaeaea;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #3a8dde;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2c79c5;
+}
+
+.hero-right {
+  flex-basis: 50%;
+}
+
+.access-icons {
+  position: fixed;
+  bottom: 150px;
+  right: 25px;
+  z-index: 1000;
+}
+
+.access-icons img {
+  display: block;
+  width: auto;
+  height: 100px;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  background-color: #122d66bd;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.card-text h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.card-text p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #d5e5ff;
+}
+
+/*-----------------Footer-----------------*/
+footer {
+  background-color: #0a101e;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 0.875rem;
+}
+
+footer p {
+  margin: 0;
+  line-height: 1.4;
 }
