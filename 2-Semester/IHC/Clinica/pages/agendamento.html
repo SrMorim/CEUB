@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clínica Cristine | Agendamento</title>
-    <link rel="stylesheet" href="/University/2-Semester/IHC/Clinica/css/agendamento.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="/University/2-Semester/IHC/Clinica/css/agendamento.css"
+    />
+  </head>
+  <body>
     <header>
       <div id="navbar">
         <div class="nav-left">
@@ -17,18 +20,37 @@
           />
           <nav class="main-nav">
             <a href="/University/2-Semester/IHC/Clinica/index.html">Início</a>
-            <a href="/University/2-Semester/IHC/Clinica/pages/agendamento.html">Agendamento</a>
+            <a href="/University/2-Semester/IHC/Clinica/pages/agendamento.html"
+              >Agendamento</a
+            >
           </nav>
         </div>
         <div class="nav-right">
           <span class="user-name">Felipe Monteiro</span>
           <div class="user-menu">
-            <button class="user-menu-btn" id="userMenuBtn" aria-expanded="false" aria-controls="userDd">
-              <img src="/University/2-Semester/IHC/Clinica/imgs/icons/account.png" alt="Usuário" class="user-avatar">
-              <span class="dd-arrow">&#8964;</span> </button>
+            <button
+              class="user-menu-btn"
+              id="userMenuBtn"
+              aria-expanded="false"
+              aria-controls="userDd"
+            >
+              <img
+                src="/University/2-Semester/IHC/Clinica/imgs/icons/account.png"
+                alt="Usuário"
+                class="user-avatar"
+              />
+              <span class="dd-arrow">&#8964;</span>
+            </button>
             <div class="dd-content" id="userDd" aria-labelledby="userMenuBtn">
-              <a href="/University/2-Semester/IHC/Clinica/pages/login.html" class="dd-item">
-                <img src="/University/2-Semester/IHC/Clinica/imgs/icons/exitaccount.png" alt="" class="dd-icon">
+              <a
+                href="/University/2-Semester/IHC/Clinica/pages/login.html"
+                class="dd-item"
+              >
+                <img
+                  src="/University/2-Semester/IHC/Clinica/imgs/icons/exitaccount.png"
+                  alt=""
+                  class="dd-icon"
+                />
                 <span>Sair da conta</span>
               </a>
             </div>
@@ -38,107 +60,119 @@
     </header>
 
     <main>
-        <div class="sched-container">
-            <h1 class="sched-page-title">Agendamento Online</h1>
+      <div class="sched-container">
+        <h1 class="sched-page-title">Agendamento Online</h1>
 
-            <div class="sched-filters">
-                <div class="filter-item">
-                    <label for="specialty">Selecione a Especialidade</label>
-                    <select name="specialty" id="specialty">
-                        <option value="">Todas</option>
-                        <option value="cardiologia">Cardiologia</option>
-                        <option value="dermatologia">Dermatologia</option>
-                        <option value="ortopedia">Ortopedia</option>
-                    </select>
-                </div>
-                <div class="filter-item">
-                    <label for="doctor">Selecione o Médico(a)</label>
-                    <select name="doctor" id="doctor">
-                        <option value="">Todos</option>
-                        <option value="drCarlos">Dr. Carlos Andrade</option>
-                        <option value="draBeatriz">Dra. Beatriz Lima</option>
-                    </select>
-                </div>
-                <button class="btn-find-slots" type="button">Buscar Horários</button>
-            </div>
-
-            <div class="sched-results">
-                <div class="day-header">
-                    <button class="btn-day-nav" aria-label="Dia anterior">&lt;</button>
-                    <h2>Segunda-feira, 19 de junho</h2>
-                    <button class="btn-day-nav" aria-label="Próximo dia">&gt;</button>
-                </div>
-
-                <div class="doc-slots-card">
-                    <div class="doc-info">
-                        <h3>Dr. Carlos Andrade</h3>
-                        <p>Cardiologista</p>
-                    </div>
-                    <div class="slots-grid">
-                        <button class="slot-avail">08:00</button>
-                        <button class="slot-avail">08:30</button>
-                        <button class="slot-avail slot-unavail" disabled>09:00</button>
-                        <button class="slot-avail">09:30</button>
-                        <button class="slot-avail">10:00</button>
-                        <button class="slot-avail slot-selected">10:30</button>
-                        <button class="slot-avail">11:00</button>
-                        <button class="slot-avail">11:30</button>
-                    </div>
-                </div>
-
-                <div class="doc-slots-card">
-                    <div class="doc-info">
-                        <h3>Dra. Beatriz Lima</h3>
-                        <p>Dermatologista</p>
-                    </div>
-                    <div class="slots-grid">
-                        <button class="slot-avail">14:00</button>
-                        <button class="slot-avail slot-unavail" disabled>14:30</button>
-                        <button class="slot-avail">15:00</button>
-                        <button class="slot-avail">15:30</button>
-                        <button class="slot-avail">16:00</button>
-                    </div>
-                </div>
-                <div class="sched-actions">
-                    <button class="btn-primary btn-proceed-sched" type="button"> Agendar</button>
-                </div>
-            </div>
+        <div class="sched-filters">
+          <div class="filter-item">
+            <label for="specialty">Selecione a Especialidade</label>
+            <select name="specialty" id="specialty">
+              <option value="">Todas</option>
+              <option value="cardiologia">Cardiologia</option>
+              <option value="dermatologia">Dermatologia</option>
+              <option value="ortopedia">Ortopedia</option>
+            </select>
+          </div>
+          <div class="filter-item">
+            <label for="doctor">Selecione o Médico(a)</label>
+            <select name="doctor" id="doctor">
+              <option value="">Todos</option>
+              <option value="drCarlos">Dr. Carlos Andrade</option>
+              <option value="draBeatriz">Dra. Beatriz Lima</option>
+            </select>
+          </div>
+          <button class="btn-find-slots" type="button">Buscar Horários</button>
         </div>
-         <div class="access-icons">
-            <img src="/University/2-Semester/IHC/Clinica/imgs/icons/acce.png" alt="Ícones de Acessibilidade" />
+
+        <div class="sched-results">
+          <div class="day-header">
+            <button class="btn-day-nav" aria-label="Dia anterior">&lt;</button>
+            <h2>Segunda-feira, 19 de junho</h2>
+            <button class="btn-day-nav" aria-label="Próximo dia">&gt;</button>
+          </div>
+
+          <div class="doc-slots-card">
+            <div class="doc-info">
+              <h3>Dr. Carlos Andrade</h3>
+              <p>Cardiologista</p>
+            </div>
+            <div class="slots-grid">
+              <button class="slot-avail">08:00</button>
+              <button class="slot-avail">08:30</button>
+              <button class="slot-avail slot-unavail" disabled>09:00</button>
+              <button class="slot-avail">09:30</button>
+              <button class="slot-avail">10:00</button>
+              <button class="slot-avail slot-selected">10:30</button>
+              <button class="slot-avail">11:00</button>
+              <button class="slot-avail">11:30</button>
+            </div>
+          </div>
+
+          <div class="doc-slots-card">
+            <div class="doc-info">
+              <h3>Dra. Beatriz Lima</h3>
+              <p>Dermatologista</p>
+            </div>
+            <div class="slots-grid">
+              <button class="slot-avail">14:00</button>
+              <button class="slot-avail slot-unavail" disabled>14:30</button>
+              <button class="slot-avail">15:00</button>
+              <button class="slot-avail">15:30</button>
+              <button class="slot-avail">16:00</button>
+            </div>
+          </div>
+          <div class="sched-actions">
+            <button class="btn-primary btn-proceed-sched" type="button">
+              Agendar
+            </button>
+          </div>
         </div>
+      </div>
+      <div class="access-icons">
+        <img
+          src="/University/2-Semester/IHC/Clinica/imgs/icons/acce.png"
+          alt="Ícones de Acessibilidade"
+        />
+      </div>
     </main>
 
     <footer>
       <p>
         <b>
-            &copy; 2025. Todos os direitos reservados para o Deus interplanetário
-        Felipe Monteiro.
+          &copy; 2025. Todos os direitos reservados para o Deus interplanetário
+          Felipe Monteiro.
         </b>
       </p>
     </footer>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const userMenuButton = document.getElementById('userMenuBtn'); /* ID Atualizado */
-        const userDropdown = document.getElementById('userDd'); /* ID Atualizado */
+      document.addEventListener("DOMContentLoaded", function () {
+        const userMenuButton =
+          document.getElementById("userMenuBtn"); /* ID Atualizado */
+        const userDropdown =
+          document.getElementById("userDd"); /* ID Atualizado */
 
         if (userMenuButton && userDropdown) {
-          userMenuButton.addEventListener('click', function (event) {
-            event.stopPropagation(); 
-            const isExpanded = userMenuButton.getAttribute('aria-expanded') === 'true';
-            userMenuButton.setAttribute('aria-expanded', !isExpanded);
-            userDropdown.classList.toggle('show');
+          userMenuButton.addEventListener("click", function (event) {
+            event.stopPropagation();
+            const isExpanded =
+              userMenuButton.getAttribute("aria-expanded") === "true";
+            userMenuButton.setAttribute("aria-expanded", !isExpanded);
+            userDropdown.classList.toggle("show");
           });
 
-          document.addEventListener('click', function (event) {
-            if (userDropdown.classList.contains('show') && !userMenuButton.contains(event.target) && !userDropdown.contains(event.target)) {
-              userDropdown.classList.remove('show');
-              userMenuButton.setAttribute('aria-expanded', 'false');
+          document.addEventListener("click", function (event) {
+            if (
+              userDropdown.classList.contains("show") &&
+              !userMenuButton.contains(event.target) &&
+              !userDropdown.contains(event.target)
+            ) {
+              userDropdown.classList.remove("show");
+              userMenuButton.setAttribute("aria-expanded", "false");
             }
           });
         }
       });
     </script>
-</body>
+  </body>
 </html>
