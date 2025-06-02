@@ -47,7 +47,235 @@
 }
 
 #reg-button {
-  background-color: #27447e;
+  background-color: #183474;
   padding: 12px 28px;
   border-radius: 25px;
+}
+
+
+/*-----------------Main-----------------*/
+body {
+  background-image: url("/University/2-Semester/IHC/Clinica/imgs/background/bg-auth.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #333; 
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  padding-top: 40px; 
+  padding-bottom: 155px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-title {
+  font-size: 2.6rem; 
+  font-weight: 600; 
+  margin-bottom: 30px;
+  text-align: center;
+
+  --gradient-title-start: #A8C0FF; 
+  --gradient-title-end: #3d60ac;   
+
+  background-image: linear-gradient(
+    45deg,
+    var(--gradient-title-start), 
+    var(--gradient-title-end)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.auth-container { 
+  display: flex;
+  align-items: stretch;
+  max-width: 920px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+
+.info-block-left img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%; 
+  object-fit: contain;
+}
+
+.register-form-right { 
+  flex-basis: 55%;
+  background-color: #FFFFFF;
+  padding: 30px 35px; 
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: #333;
+}
+
+.register-form-right h2 { 
+  font-size: 1.6rem; 
+  color: #1A3A73; 
+  margin-bottom: 25px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 18px; 
+}
+
+.form-row {
+  display: flex;
+  gap: 20px; 
+}
+
+.form-row .form-group {
+  flex: 1; 
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.8rem; 
+  color: #4A5568;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-group label .required {
+  color: #E53E3E;
+  margin-left: 3px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="date"] {
+  width: 100%;
+  padding: 9px 2px 7px 2px;  
+  border: none;
+  border-bottom: 1px solid #DCDCDC; 
+  border-radius: 0;
+  font-size: 0.9rem; 
+  color: #2D3748;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.2s ease-in-out, border-width 0.2s ease-in-out;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="text"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="date"]:focus {
+  border-bottom-color: #6E98F6; 
+  border-bottom-width: 2px;
+}
+
+.already-account {
+  text-align: center;
+  font-size: 0.85rem; 
+  color: #4A5568;
+  margin-top: 20px; 
+  margin-bottom: 25px; 
+}
+
+.already-account .login-link {
+  color: #6E98F6; 
+  font-weight: bold;
+  text-decoration: none;
+}
+.already-account .login-link:hover {
+  text-decoration: underline;
+}
+
+.btn-submit { 
+  display: block;
+  background-color: #6E98F6; 
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  text-transform: uppercase;
+  margin-bottom: 20px; 
+}
+
+.btn-submit:hover {
+  background-color: #2c79c5;
+}
+
+.terms-agreement {
+  display: flex;
+  align-items: flex-start; 
+  font-size: 0.78rem; 
+  color: #4A5568;
+  line-height: 1.5;
+}
+
+.terms-agreement input[type="checkbox"] {
+  margin-right: 8px;
+  margin-top: 4px; 
+  flex-shrink: 0; 
+  accent-color: #3A8DDE;
+}
+.terms-agreement .terms-label {
+    cursor: pointer;
+}
+.terms-agreement .terms-label a { 
+    color: #3A8DDE; 
+    text-decoration: none;
+    font-weight: 500;
+}
+.terms-agreement .terms-label a:hover {
+    text-decoration: underline;
+}
+.terms-agreement .terms-label .required {
+    color: #E53E3E;
+    margin-left: 3px;
+}
+
+.access-icons {
+  position: fixed;
+  bottom: 150px; 
+  right: 25px;
+  z-index: 1000;
+}
+
+.access-icons img {
+  display: block;
+  height: 100px;
+  width: auto;
+}
+
+/*-----------------Footer-----------------*/
+footer {
+  background-color: #0A101E;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 0.875rem;
+}
+
+footer p {
+  margin: 0;
+  line-height: 1.4;
 }

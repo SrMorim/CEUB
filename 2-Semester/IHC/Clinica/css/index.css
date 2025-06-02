@@ -47,7 +47,7 @@
 }
 
 #reg-button {
-  background-color: #27447e;
+  background-color: #183474;
   padding: 12px 28px;
   border-radius: 25px;
 }
@@ -104,7 +104,7 @@ main {
 
 .cta-button {
   display: inline-block;
-  background-color: #3a8dde;
+  background-color: #183474;
   color: white;
   padding: 14px 28px;
   text-decoration: none;
@@ -115,7 +115,7 @@ main {
 }
 
 .cta-button:hover {
-  background-color: #2c79c5;
+  background-color: #122d66;
 }
 
 .hero-right {
